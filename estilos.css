@@ -156,3 +156,45 @@ body {
 }
 
 
+/* Estilos para pantallas de hasta 768px (tabletas y celulares) */
+@media screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-left,
+  .nav-center,
+  .nav-right {
+    justify-content: center;
+  }
+
+  .pagina-principal {
+    padding: 20px;
+  }
+
+  .grid-productos {
+    grid-template-columns: 1fr 1fr; /* 2 productos por fila en móvil */
+    gap: 20px;
+  }
+
+  .producto {
+    max-width: 100%;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .icono {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Estilos para pantallas muy pequeñas (menos de 480px) */
+@media screen and (max-width: 480px) {
+  .grid-productos {
+    grid-template-columns: 1fr; /* 1 producto por fila */
+  }
+}
