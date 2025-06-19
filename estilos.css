@@ -77,15 +77,21 @@ body {
 
 .grid-productos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 40px;
   justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .producto {
+  display: block;
   text-align: center;
   max-width: 240px;
+  text-decoration: none;
+  color: inherit;
 }
+
 
 .producto img {
   width: 100%;
